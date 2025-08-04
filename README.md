@@ -140,7 +140,8 @@ If this template helped you create an awesome resume, please give it a star! ⭐
 ## 📞 Contact
 
 **Author**: Tarush J Reddy  
-**Email**: brighuraina9999@gmail.com  
+**Email**: tarushjreddy63@gmail.com  
+**Phone**: +91 7338003303 
 
 ---
 
