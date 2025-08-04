@@ -1,0 +1,246 @@
+%-------------------------
+% Resume in Latex
+% Author : Tarush J Reddy
+% email: brighuraina9999@gmail.com
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+    }
+}
+
+\titleformat{\section}{
+  \vspace{-10pt} % Reduce the space above the section title
+  \scshape\raggedright\large
+}{}{0em}{}[
+  \color{black}\titlerule % Horizontal rule below the section title
+  \vspace{-6pt} % Reduce the space below the section title
+]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeItemListStartTight}{\vspace{-6pt}\resumeItemListStart}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{list}{}{
+    \setlength\leftmargin{0pt} % Remove left margin
+    \setlength\itemindent{0pt} % Remove item indentation
+    \setlength\itemsep{-3pt}   % Remove vertical space between items
+    \setlength\parskip{0pt}    % Remove extra space between paragraphs
+  }
+}
+\newcommand{\resumeSubHeadingListEnd}{\end{list}}
+
+% Add this in your preamble to remove blue borders and keep black text
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,  % Links will be black
+    urlcolor=black    % URLs will also be black
+}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+    \textbf{{\huge Tarush J Reddy}}\\
+    \vspace{5pt} % Adjust the space before the contact info
+    tarushj.reddy@thoughtworks.com \ $|$ \ +91 7338003303 \ $|$ \ LinkedIn: \href{https://www.linkedin.com/in/brighu-raina-66687b1a6/}{ tarushjreddy}
+\end{center}
+
+%-----------SUMMARY-----------------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \item{{Platform Engineer  with almost 3 years of hands-on experience in Devops, designing, developing, and maintaining robust server-side applications.}}
+  \resumeSubHeadingListEnd
+  
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {BMS INSTITUE OF TECHNOLOGY}{Banglore, Karnataka}
+      {Bachelor of Engineering in Computer Science – CGPA - 8.2 }{July 2018 – June 2022}
+
+
+    \resumeSubheading
+      {PES UNIVERSITY}{Banglore, Karnataka}
+      {Masters in Data Science and Artificial intelligence – Present (Weekend Batch Offline) }{July 2025 – July 2027}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \item{\textbf{Languages}{: Python, Java, Go, C/C++, Javascript, React.js/React Native, Dart(Flutter) }}
+    \item{\textbf{Cloud Platforms}{: AWS (EKS, SES, Lambda, S3, DynamoDB, ECS, EC2), Azure (AKS), GCP}}
+    \item{\textbf{DevOps Tools}{: Kubernetes, Docker, Terraform, Helm, ArgoCD, Prometheus}}
+    \item{\textbf{Databases and Technologies}{: Spring Boot, Machine Learning, Artificial Intelligence, MongoDB, Redis, Kafka}}
+    \item{\textbf{Technical Tools}{: Git, IntelliJ, Postman, JIRA, Docker}}
+    \item{\textbf{Communication Frameworks}{: Amazon SES, Sendgrid, Mailgun, Twilio, Pusher}}
+ \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Infrastructure Engineer}{June 2025 - Present}
+      {Thoughtworks}{Bengaluru, Karnataka}
+      \resumeItemListStartTight
+      \resumeItem{AI Based Cloud Cost Planner}
+          {Developed email service infrastructure handling 5M+ daily events using AWS SES, SendGrid, and Kafka, reducing latency by 35\% through Redis caching with Python and Java Spring boot}
+        \resumeItem{Devops Custom LLM Model}
+          {Designed and deployed Kubernetes clusters across AWS and Azure using Terraform, improving deployment efficiency by 40\% and achieving 99.95\% uptime}
+          \resumeItem{End To End IAC}
+          {Automated the complete process of provisioning and creation of AWS Lambda, DynamoDB, ECS (clusters and Microservices) using Terraform }
+          \resumeItem{Carbon Footprint }
+          {Designed and implemented Thanos for centralized, long-term metrics storage across multiple environments (dev, staging, production), reducing storage costs by 30\%.}
+     \
+    
+        
+      \resumeItemListEnd
+    \resumeSubheading
+      {Devops Engineer 1}{Jan 2024 - Jun 2025}
+      {Tekion India Pvt Ltd}{Bengaluru, Karnataka}
+      \resumeItemListStartTight
+      \resumeItem{Event-Driven Email System}
+          {Developed email service infrastructure handling 5M+ daily events using AWS SES, SendGrid, and Kafka, reducing latency by 35\% through Redis caching with Python and Java Spring boot}
+        \resumeItem{Multi-Cloud Infrastructure}
+          {Designed and deployed Kubernetes clusters across AWS and Azure using Terraform, improving deployment efficiency by 40\% and achieving 99.95\% uptime}
+          \resumeItem{Infrastructure Setup and Provisioning}
+          {Automated the complete process of provisioning and creation of AWS Lambda, DynamoDB, ECS (clusters and Microservices) using Terraform }
+          \resumeItem{Thanos Impleamentation}
+          {Designed and implemented Thanos for centralized, long-term metrics storage across multiple environments (dev, staging, production), reducing storage costs by 30\%.}
+     \
+    
+      \resumeItemListEnd
+    \resumeSubheading
+      {Associate Devops Engineer}{September 2022 - Jan 2024}
+      {Tekion India Pvt Ltd}{Bengaluru, Karnataka}
+      \resumeItemListStartTight
+        \resumeItem{Cost Optimization Platform}
+          {Developed full-stack cost analysis tool (React Native + Java (Spring Boot)) that identified 30\% potential savings across cloud environments for AWS and Azure}
+            \resumeItem{Security  and Infra Enhancements}
+          {Worked on WAF classic and v2 to restrict access to internal assets owned by DevOps also Engineered infrastructure setups for AWS and Azure using Docker and Kubernetes to optimize deployment and resource management across multi-cloud environments.}
+        \resumeItem{Approval Management System}
+          {Built microservice using Java/SpringBoot and Kafka, reducing service creation time by 60\% through Redis caching and event-driven architecture}
+             \resumeItemListEnd
+
+    \resumeSubheading
+      { Software Engineer Intern}{March 2022 - September 2022}
+      {Tekion India Pvt Ltd}{Remote}
+      \resumeItemListStartTight
+         \resumeItem{Cloud Applications}
+          {Developed web applications using Flask and React.js with AWS/Azure integration, enabling dynamic configuration of customer properties}
+      \resumeItemListEnd
+
+       \resumeSubheading
+      { Software Engineer Intern}{August 2021 - February 2022}
+      {Policyera India Pvt Ltd}{Remote}
+      \resumeItemListStartTight
+         \resumeItem{Mobile Application Development}
+          {Developed and launched two mobile insurance applications using Flutter.
+}
+      \resumeItemListEnd
+
+       \resumeSubheading
+      { Software Engineer Intern}{March 2021 - August 2021}
+      {Webknot India Pvt Ltd}{Remote}
+      \resumeItemListStartTight
+         \resumeItem{Web Development}
+          {Developed a comprehensive law advisory website using TypeScript and React.js, while mentoring a team of 3 interns throughout the project.
+}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+
+%--------Achievements------------
+\section{Achievements}
+
+   \resumeSubHeadingListStart
+        \item{\textbf{Accenture Certified}{: Full Stack and Java (2022)}}
+        \item{\textbf{Hackathon Finalist}{: Gov-Tech-Thon 2020 by Bit-Code}}
+        \item{\textbf{Open Source Contributor}{: Active GitHub contributor to multiple projects}}
+   \resumeSubHeadingListEnd
+   %--------Achievements------------
+\section{Hobbies}
+
+   \resumeSubHeadingListStart
+        \item{\textbf{Problem Solving}{: Solving complex problems and mastering cutting-edge technologies are my passions}}
+        \item{\textbf{Puzzels and Riddles}{: Solving all new gen puzzels and rubics riddles }}
+ 
+   \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
